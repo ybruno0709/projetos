@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar CEP</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/9c759853a3.js" crossorigin="anonymous"></script>
+    <script defer src="../assets/js/script.js"></script>
+    <script defer src="../assets/js/formmatInput.js"></script>
+    <script defer src="../assets/js/label.js"></script>
+<body>
+    <div class="container">
+        <h2>Consultar CEP</h2>
+        <form>
+            <div class="form-single">
+                <input type="text" name="cep-input" maxlength="9" required>
+                <label for="cep-input">CEP</label>
+            </div><!-- form-single -->
+
+            <input type="submit" name="action" class="btn" value="Consultar">
+        </form>
+    </div><!-- container -->
+
+    <div class="container desktop">
+        <h2>Resultados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome/Logradouro</th>
+                    <th>Bairro/Distrito</th>
+                    <th>Localidade/UF</th>
+                    <th>CEP</th>
+                </tr>  
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </div><!-- container desktop -->
+
+    <div class="container mobile">
+        <h2>Resultado</h2>
+    </div><!-- container mobile -->
+</body>
+</html>

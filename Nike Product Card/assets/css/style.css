@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    font-family: Quicksand, sans-serif;
+}
+
+:root {
+    --color-color1: #1c477a;
+    --color-color2: #c02244;
+    --color-banner1: #f1ae04;
+    --color-banner2: #d35246;
+    --color-content-highlight: #25d390;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700); /*
+
+========== Nike Card ==========
+=========== CONTENT ===========
+*/
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 50rem;
+    height: 70rem;
+}
+
+.card-wraper {
+    width: 100%;
+    height: 100%;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 30rem;
+    height: 55rem;
+    background-color: #eee;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.card-banner {
+    width: 100%;
+    height: 50%;
+    padding: 3rem;
+    background-color: var(--color-banner1);
+    border-radius: 2.5rem 2.5rem 0 0;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.card-banner-txt {
+    color: white;
+}
+
+.card-banner-txt h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.card-banner-txt p {
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+.shoe {
+    transition: opacity 0.5s, transform 1s, right 1s, rotate 1s;
+}
+
+.shoe:hover {
+    opacity: 10%;
+}
+
+#shoe1 {
+    width: 30rem;
+    position: absolute;
+    top: -2rem;
+    right: -10rem;
+}
+
+#shoe2 {
+    width: 33rem;
+    position: absolute;
+    top: -8rem;
+    right: -45rem;
+    filter: drop-shadow(1rem 3.2rem 0.5rem rgba(0, 0, 0, 0.25));
+}
+
+.card-content {
+    width: 100%;
+    height: 50%;
+    padding: 2rem 3rem;
+}
+
+.card-content h2 {
+    margin-bottom: 0.6rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.card-content-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.badge {
+    height: 2rem;
+    padding: 0 0.5rem;
+    background-color: var(--color-content-highlight);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+}
+
+.card-content > h3 {
+    font-weight: 400;
+}
+
+.stars {
+    margin-bottom: 3rem;
+}
+
+.stars.one i:nth-of-type(n + 2) {
+    opacity: 50%;
+}
+
+.stars.two i:nth-of-type(n + 3) {
+    opacity: 50%;
+}
+
+.stars.three i:nth-of-type(n + 4) {
+    opacity: 50%;
+}
+
+.stars.four i:nth-of-type(n + 5) {
+    opacity: 50%;
+}
+
+.size {
+    margin-bottom: 3rem;
+}
+
+.sizes {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.sizes span {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+}
+
+.sizes span.selected {
+    color: white;
+    background-color: var(--color-content-highlight);
+}
+
+.colors {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.color-single {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#color1 {
+    background-color: var(--color-color1);
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+}
+
+#color2 {
+    background-color: var(--color-color2);
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+}
+
+.price {
+    width: 14rem;
+    height: 3.5rem;
+    color: white;
+    text-align: center;
+    line-height: 3.5rem;
+    background-color: var(--color-color1);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    position: absolute;
+    right: -1rem;
+    bottom: 3rem;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.price span {
+    font-size: 1.75rem;
+}
+
+.price span:first-child {
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.price span {
+    font-weight: 700;
+}
+
+.container.second-color .card-banner {
+    background-color: var(--color-banner2);
+}
+
+.container.second-color .price {
+    background-color: var(--color-color2);
+}
+
+.container.second-color #shoe1 {
+    transform: translateX(-50rem) rotateZ(45deg);
+}
+
+.container.second-color #shoe2 {
+    right: -2rem;
+    rotate: -45deg;
+}
