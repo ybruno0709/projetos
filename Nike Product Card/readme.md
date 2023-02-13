@@ -6,4 +6,4 @@
 
 ## ☕ Utilizando o Cartão de Produto
 
-Para poder utilizar este projeto, você pode entrar [neste link](https://luxury-mermaid-2bb19f.netlify.app/nike%20product%20card/pages/).
+Para poder utilizar este projeto, você pode entrar [neste link](https://ybruno0709.netlify.app/nike%20product%20card/pages/).
