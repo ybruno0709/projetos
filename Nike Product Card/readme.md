@@ -6,4 +6,4 @@
 
 ## ☕ Utilizando o Cartão de Produto
 
-Para poder utilizar este projeto, você pode entrar [neste link](https://ybruno0709.netlify.app/nike%20product%20card/pages/).
+Para poder utilizar este projeto, você pode entrar [neste link](https://bit.ly/ybruno0709prj1).
