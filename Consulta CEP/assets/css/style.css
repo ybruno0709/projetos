@@ -120,6 +120,15 @@ body {
     color: red;
 }
 
+#error {
+    color: red;
+    display: none;
+}
+
+.invalid #error {
+    display: block;
+}
+
 /*
 ========= CONSULT CPF =========
 ======== DESKTOP RESULT =======
