@@ -21,7 +21,12 @@ async function searchCep(cepNumber) {
         const response = await fetch(`https://viacep.com.br/ws/${cepNumber}/json/`);
         const data = await response.json();
 
-        cepSucessfull(data);
+        if (data.cep == undefined) {
+            cepError();
+        } else {
+            cepSucessfull(data);
+        }
+
     } catch (error) {
         cepError(error);
     }
@@ -66,8 +71,6 @@ function addCepToMobile(data) {
 }
 
 function cepSucessfull(data) {
-    console.log(data);
-
     addCepToTable(data);
     addCepToMobile(data);
 
@@ -75,6 +78,5 @@ function cepSucessfull(data) {
 }
 
 function cepError(error) {
-    console.error(error);
     formEl.classList.add('invalid');
 }
