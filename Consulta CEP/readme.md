@@ -7,4 +7,4 @@ API utilizada: [ViaCEP](https://viacep.com.br/)
 
 ## ☕ Utilizando o Busca CEP
 
-Para poder testar este projeto, você pode entrar [neste link](https://luxury-mermaid-2bb19f.netlify.app/consulta%20cep/pages/).
+Para poder testar este projeto, você pode entrar [neste link](https://ybruno0709.netlify.app/consulta%20cep/pages/).
